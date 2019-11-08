@@ -5,6 +5,25 @@ import Joke from './hooks/Joke';
 import Stories from './hooks/Stories';
 
 const App = () => {
+  const characters = [
+    {
+      name: 'Charlie',
+      job: 'Janitor',
+    },
+    {
+      name: 'Mac',
+      job: 'Bouncer',
+    },
+    {
+      name: 'Dee',
+      job: 'Aspring actress',
+    },
+    {
+      name: 'Dennis',
+      job: 'Bartender',
+    },
+  ]
+
   return (
     <div className="container">
       <hr />
@@ -22,7 +41,7 @@ const App = () => {
       <hr />
       <hr />
       <hr />
-      <Table />
+      <Table characterData={characters} />
     </div>
   );
 }
